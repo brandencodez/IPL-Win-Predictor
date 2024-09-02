@@ -3,7 +3,7 @@
 # Overview
 This project aims to predict the probabilities of IPL team wins and analyze cricket statistics using machine learning and data visualization techniques. The predictive model, using both Linear and Logistic Regression for comparison, provides insights into team performance and match outcomes, aiding in decision-making.
 
-(![image alt](https://github.com/brandenmac/IPL-Win-Predictor/blob/11ecbfe97d842bddfb07f3ddbd496ba9dff5cc69/4.9.png)
+![image alt](https://github.com/brandenmac/IPL-Win-Predictor/blob/11ecbfe97d842bddfb07f3ddbd496ba9dff5cc69/4.9.png)
 ![image alt](https://github.com/brandenmac/IPL-Win-Predictor/blob/11ecbfe97d842bddfb07f3ddbd496ba9dff5cc69/4.10.png)
 ![image alt](https://github.com/brandenmac/IPL-Win-Predictor/blob/11ecbfe97d842bddfb07f3ddbd496ba9dff5cc69/4.11.png)
 

@@ -3,9 +3,9 @@
 # Overview
 This project aims to predict the probabilities of IPL team wins and analyze cricket statistics using machine learning and data visualization techniques. The predictive model, using both Linear and Logistic Regression for comparison, provides insights into team performance and match outcomes, aiding in decision-making.
 
-(https://github.com/brandenmac/IPL-Win-Predictor/blob/master/4.9.png?raw=true)
-(https://github.com/brandenmac/IPL-Win-Predictor/blob/master/4.10.png?raw=true)
-(https://github.com/brandenmac/IPL-Win-Predictor/blob/master/4.11.png?raw=true)
+(![image alt](https://github.com/brandenmac/IPL-Win-Predictor/blob/11ecbfe97d842bddfb07f3ddbd496ba9dff5cc69/4.9.png)
+![image alt](https://github.com/brandenmac/IPL-Win-Predictor/blob/11ecbfe97d842bddfb07f3ddbd496ba9dff5cc69/4.10.png)
+![image alt](https://github.com/brandenmac/IPL-Win-Predictor/blob/11ecbfe97d842bddfb07f3ddbd496ba9dff5cc69/4.11.png)
 
 # Features
 - **Predictive Modeling**: Estimate the probability of IPL teams winning based on historical match data.
@@ -26,18 +26,18 @@ This project aims to predict the probabilities of IPL team wins and analyze cric
 - scikit-learn==1.3.2
 - streamlit==1.27.2
 
-# Model Outputs and Visualizations
-(https://github.com/brandenmac/IPL-Win-Predictor/blob/master/4.8.png?raw=true)
-- Linear Regression Accuracy
+# Outputs and Visualizations
+![image alt](https://github.com/brandenmac/IPL-Win-Predictor/blob/11ecbfe97d842bddfb07f3ddbd496ba9dff5cc69/4.8.png)
+Linear Regression Accuracy<br>
 
-(https://github.com/brandenmac/IPL-Win-Predictor/blob/master/4.7.png?raw=true)
-- Confusion Matrix 
+![image alt](https://github.com/brandenmac/IPL-Win-Predictor/blob/11ecbfe97d842bddfb07f3ddbd496ba9dff5cc69/4.7.png)
+Confusion Matrix<br>
 
-(https://github.com/brandenmac/IPL-Win-Predictor/blob/master/image006.png?raw=true)
-- Match Progress
+![image alt](https://github.com/brandenmac/IPL-Win-Predictor/blob/11ecbfe97d842bddfb07f3ddbd496ba9dff5cc69/image006.png)
+ Match Progress<br>
 
-(https://github.com/brandenmac/IPL-Win-Predictor/blob/master/image003.png?raw=true)
-- Win Rate by Toss Decision
+![image alt](https://github.com/brandenmac/IPL-Win-Predictor/blob/11ecbfe97d842bddfb07f3ddbd496ba9dff5cc69/image003.png)
+Win Rate by Toss Decision<br>
 
 
 

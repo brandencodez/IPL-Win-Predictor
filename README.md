@@ -40,6 +40,12 @@ Confusion Matrix<br>
 Win Rate by Toss Decision<br>
 
 
+# Clone the repository:
+   ```bash
+   git clone https://github.com/krispycake/IPL-Win-Predictor.git
+
+
+
 
 
 

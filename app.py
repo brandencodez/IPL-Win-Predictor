@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import random
 
 # Load the model pipeline
-pipe = pickle.load(open('pipe.pkl','rb'))
+pipe = pickle.load(open('xgb_model.pkl','rb'))
 
 # Load IPL matches data
 @st.cache_data
@@ -27,14 +27,22 @@ teams = {
     'Mumbai Indians': 'blue',
     'Royal Challengers Bangalore': 'red',
     'Kolkata Knight Riders': 'purple',
-    'Kings XI Punjab': 'silver',
+    'Punjab Kings': 'silver',
     'Chennai Super Kings': 'yellow',
     'Rajasthan Royals': 'pink',
-    'Delhi Capitals': 'darkblue'
+    'Delhi Capitals': 'darkblue',
+    'Lucknow Super Giants': 'cyan',
+    'Gujarat Titans': 'darkblue'
 }
 
-cities = sorted(['Hyderabad', 'Bangalore', 'Mumbai', 'Indore', 'Kolkata', 'Delhi', 'Chandigarh', 'Jaipur', 'Chennai', 'Cape Town', 'Port Elizabeth', 'Durban', 'Centurion', 'East London', 'Johannesburg', 'Kimberley', 'Bloemfontein', 'Ahmedabad', 'Cuttack', 'Nagpur', 'Dharamsala', 'Visakhapatnam', 'Pune', 'Raipur', 'Ranchi', 'Abu Dhabi', 'Sharjah', 'Mohali', 'Bengaluru'])
-
+cities = sorted([
+    'Chandigarh', 'Chennai', 'Visakhapatnam', 'Mumbai', 'Kolkata', 'Hyderabad',
+    'Ranchi', 'Dharamsala', 'Durban', 'Mohali', 'Delhi', 'Nagpur', 
+    'Ahmedabad', 'Lucknow', 'Abu Dhabi', 'Johannesburg', 'Guwahati',
+    'Centurion', 'Sharjah', 'Jaipur', 'Dubai', 'Navi Mumbai', 'Pune', 'Indore',
+    'Cuttack', 'Port Elizabeth', 'East London', 'Raipur', 'Bloemfontein',
+    'Cape Town', 'Kimberley', 'Bengaluru' 
+])
 # Commentary phrases
 commentary_phrases = [
     "What an intense match we have here!",
@@ -125,7 +133,7 @@ if st.button('Predict Probability'):
     st.subheader('Head-to-Head Results')
     head_to_head_matches = matches_data[((matches_data['team1'] == batting_team) & (matches_data['team2'] == bowling_team)) | ((matches_data['team1'] == bowling_team) & (matches_data['team2'] == batting_team))]
     if not head_to_head_matches.empty:
-        st.write(head_to_head_matches[['team1', 'team2', 'winner', 'win_by_wickets', 'win_by_runs',
+        st.write(head_to_head_matches[['team1', 'team2', 'winner', 'result', 'result_margin',
 'venue', 'date']])
 
         # Calculate win count for each team
@@ -144,7 +152,7 @@ if st.button('Predict Probability'):
     recent_matches_bowling = matches_data[((matches_data['team1'] == bowling_team) | (matches_data['team2'] == bowling_team)) & (matches_data['winner'].notnull())].tail(5)
 
     st.write(f"Recent matches played by {batting_team}:")
-    st.write(recent_matches_batting[['team1', 'team2', 'winner',  'win_by_wickets', 'win_by_runs','venue', 'date']])
+    st.write(recent_matches_batting[['team1', 'team2', 'winner',  'result', 'result_margin','venue', 'date']])
 
     st.write(f"Recent matches played by {bowling_team}:")
-    st.write(recent_matches_bowling[['team1', 'team2', 'winner', 'win_by_wickets', 'win_by_runs', 'venue', 'date']])
+    st.write(recent_matches_bowling[['team1', 'team2', 'winner', 'result', 'result_margin', 'venue', 'date']])

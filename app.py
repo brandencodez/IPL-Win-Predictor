@@ -68,7 +68,7 @@ commentary_phrases = [
 ]
 
 # Streamlit app layout
-st.image('74508790.png')
+st.image('images/74508790.png')
 st.title('IPL Win Predictor')
 
 col1, col2 = st.columns(2)
